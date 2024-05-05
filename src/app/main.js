@@ -5,7 +5,7 @@ export default function App() {
     let initText = 'Hi! My name is...';
     let btns = ListInfo.links.map((e) => {
         return (
-            <button key={e.name} className='flex transform ml-2 lg:ml-4 mr-2 lg:mr-4 hover:-translate-y-1 hover:scale-110 duration-100' onClick={() => {window.open(e.url, '_blank')}}>
+            <button key={e.name} className='flex transform ml-2 lg:ml-4 mr-2 lg:mr-4 lg:hover:-translate-y-1 lg:hover:scale-110 lg:duration-100' onClick={() => {window.open(e.url, '_blank')}}>
                 <svg className='w-12 lg:w-20' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
                     {e.logo}
                 </svg>
