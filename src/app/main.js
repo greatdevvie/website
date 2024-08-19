@@ -2,7 +2,6 @@ import React from "react";
 import ListInfo from './lists/listInfo';
 
 export default function App() {
-    let initText = 'Hi! My name is...';
     let btns = ListInfo.links.map((e) => {
         return (
             <button key={e.name} className='flex transform ml-2 lg:ml-4 mr-2 lg:mr-4 lg:hover:-translate-y-1 lg:hover:scale-110 lg:duration-100' onClick={() => {window.open(e.url, '_blank')}}>
